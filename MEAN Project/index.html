@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="DemoApp.js"></script>
+    <script src="Controllers/HomeController.js"></script>
+    <script src="Routes/productRoute.js"></script>
+    
+    
+
+</head>
+<body ng-app="DemoApp" ng-controller="HomeController">
+  <h2 align="center">Products Index</h2>
+  <table width="400" border="1" align="center">
+      <th>Product Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Manufactured</th>
+      <tr ng-repeat="item in products">
+          <td>{{item.ProductId}}</td>
+          <td>{{item.Name}}</td>
+          <td>{{item.Price | currency:'&#8377;':2}}</td>
+          <td>{{item.Mfd| date}}</td>
+      </tr>
+  </table>
+  <br>
+  <div align="center">
+      <a href="#!register">Add New Product</a>
+  </div>
+  <div>
+      <ng-view></ng-view>
+  </div>
+</body>
+</html>

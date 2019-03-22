@@ -1,0 +1,17 @@
+<div>
+    <h2>Register Product</h2>
+    <form method="post" ng-submit="RegisterProduct(product)">
+        <dl>
+            <dt>Product Id</dt>
+            <dd><input type="number" name="txtId" ng-model="product.ProductId"></dd>
+            <dt>Name</dt>
+            <dd><input type="text" name="txtName" ng-model="product.Name"> </dd>
+            <dt>Price</dt>
+            <dd><input type="text" name="txtPrice" ng-model="product.Price"> </dd>
+            <dt>Manufactured</dt>
+            <dd><input type="date" name="txtMfd" ng-model="product.Mfd"> </dd>
+        </dl>
+        <br>
+        <button>Register</button>
+    </form>
+</div>

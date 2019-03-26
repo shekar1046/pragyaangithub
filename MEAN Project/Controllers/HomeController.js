@@ -1,7 +1,7 @@
 app.controller('HomeController',function ($scope, $http) {
     $scope.products=[];
     function GetDetails() {
-       $http.get('/products')
+       $http.get('API/products.json')
            .then(function (response) {
                $scope.products=response.data;
            })

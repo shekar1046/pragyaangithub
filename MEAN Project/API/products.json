@@ -3,18 +3,23 @@
     "Id":1,
     "Name":"Samsung TV",
     "Price":45000.50,
-    "Photo":"Images/tv.jpg"
+    "Photo":"Images/tv.jpg",
+    "Mfd": "22/03/19"
+
+
   },
   {
     "Id":2,
     "Name":"Nike Shoe",
     "Price":3000.50,
-    "Photo":"Images/shoe.jpg"
+    "Photo":"Images/shoe.jpg",
+    "Mfd": "22/03/19"
   },
   {
     "Id":3,
     "Name":"Lee Copper Boot",
     "Price":4500.50,
-    "Photo":"Images/shoe1.jpg"
+    "Photo":"Images/shoe1.jpg",
+    "Mfd": "22/03/19"
   }
 ]
